@@ -1,0 +1,160 @@
+body {
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.btn-group-justified {
+    padding: 0 15px;
+}
+
+.jumbotron {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+.well {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 0;
+}
+
+#welltext {
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    font-style: italic;
+}
+
+.img-thumbnail {
+    opacity: 1;
+    transition: 0.7s ease;
+}
+
+.overlay {
+    opacity: 0;
+    transition: 0.7s ease;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+.overlay-box {
+    position: relative;
+}
+
+.overlay-box:hover .img-thumbnail {
+    opacity: 0.15;
+}
+
+.overlay-box:hover .overlay {
+    opacity: 0.85;
+}
+
+.resume-text {
+    padding-top: 20px;
+}
+
+.resume-text h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.text {
+    color: #000000;
+    font-size: 16px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    transform: translate(0%, -100%);
+    text-align: center;
+}
+
+.top-row {
+    padding-bottom: 0;
+    border-bottom-color: white;
+}
+
+.middle-row {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom-color: white;
+}
+
+.bottom-row {
+    padding-top: 0;
+}
+
+.projectrow {
+    border-color: white;
+}
+
+.inner-text {
+    font-size: 18px;
+}
+
+.timeframe {
+    padding-left: 0px;
+}
+
+.homeimg img {
+    max-width: 60%;
+    margin: auto;
+}
+
+.page-header {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.small-head {
+    font-size: 36px;
+}
+
+.centered-head {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.project-text {
+    font-size: 24px;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.contact-info {
+    padding: 0 15px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.writeup-text {
+    text-align: center;
+    justify-content: center;
+}
+
+.carousel-caption {
+    color: black;
+}
+
+a.discrete-links {
+    color: black;
+}
