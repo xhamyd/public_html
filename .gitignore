@@ -1,0 +1,11 @@
+# Private files for SEO / Website Integrity
+.htaccess
+*.xml
+google*.html
+
+# PDF files don't need to be tracked by Git
+documents/
+
+# Same with images
+images/
+*.ico
