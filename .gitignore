@@ -9,3 +9,7 @@ documents/
 # Same with images
 images/
 *.ico
+
+# Blocking out config files
+.ftpconfig
+.ftpignore
