@@ -9,7 +9,10 @@ documents/
 # Same with images
 images/
 *.ico
+.DS_Store
 
 # Blocking out config files
 .ftpconfig
 .ftpignore
+
+package-lock.json

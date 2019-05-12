@@ -83,6 +83,17 @@ h1 {
     text-align: center;
 }
 
+.homeimg-text {
+    color: #000000;
+    font-size: 32px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    transform: translate(0%, -100%);
+    text-align: center;
+}
+
 .top-row {
     padding-bottom: 0;
     border-bottom-color: white;
@@ -111,7 +122,6 @@ h1 {
 }
 
 .homeimg img {
-    max-width: 60%;
     margin: auto;
 }
 
