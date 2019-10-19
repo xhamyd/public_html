@@ -3,16 +3,8 @@
 *.xml
 google*.html
 
-# PDF files don't need to be tracked by Git
-documents/
-
-# Same with images
-images/
-*.ico
+# Then your typically ignored files
 .DS_Store
-
-# Blocking out config files
-.ftpconfig
-.ftpignore
-
 package-lock.json
+.well-known
+cgi-bin/
