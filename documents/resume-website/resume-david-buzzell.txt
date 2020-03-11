@@ -1,0 +1,61 @@
+David A. Buzzell
+Phone: (404) 585-1629
+Email: mail@davidbuzzell.com
+Website: www.davidbuzzell.com
+
+EDUCATION
+Carnegie Mellon University, Pittsburgh PA
+Bachelor of Science in Electrical and Computer Engineering - May 2017
+Bachelor of Science in Music and Technology - August 2017
+
+CERTIFICATIONS
+Certified Scrum Master (CSM) - January 2020
+Certified Scrum Product Owner (CSPO) - January 2020
+
+WORK EXPERIENCE
+Software Engineer at iRobot
+Robot Simulator Specialist (November 2019 – March 2020)
+  - Supported uptime of simulated robots in AWS Robomaker running 50 mission hrs/day
+  - Enhanced automatic log extraction to evaluate simulated robot performance every robot cleaning mission and auto-populate online reports through SQL queries
+  - Reviewed contributions to 3 different code repositories in C++, ROS, and Python
+  - Supported Scrum policy changes to improve feature reporting and delivery
+
+Automation Infrastructure Developer (February 2019 – November 2019)
+  - Architected new Python automation for robot software testing company-wide
+  - Automated robot log file evaluation, reducing manual log review time by 5 hrs/week
+  - Reduced manual testing time by 30% through fostering adoption of automation
+  - Collaborated with an 8-person team to deliver new software features every 3 weeks
+  - Pioneered 466 code standards (Pylint) and distributing code documentation (Sphinx)
+
+Product Delivery QA (November 2017 – February 2019)
+  - Designed 40% of manual test plan for next-gen autonomous cleaning robot software
+  - Assisted factory operations in quality assurance for release of the Braava Jet m6 robot
+  - Authored first comprehensive documentation of terms and acronyms used at iRobot
+  - Mentored an undergraduate intern for 3 months validating new product delivery features and development of Linux process monitoring system for new automation
+
+RESEARCH PROJECTS
+Depth-Controlled Ambisonic Audio (May 2017 – August 2017)
+  - Interfaced with Microsoft Kinect sensor to track user movements in a 360° speaker ring
+  - Relayed these movements through MaxMSP to 2nd order ambisonic audio processing
+  - Replicated a 3D auditory experience by decoding signals for an 8-channel output
+
+Hybrid Instruments (May 2016 – August 2016)
+  - Engineered pre-amplifiers for contact microphones with PCBs designed in EAGLE
+  - Evaluated performance on 3D printed phone cases with string bows attached
+  - Characterized analog signal measurement with mobile app development for QA
+
+RELEVANT SKILLS
+Technologies: Python, C/C++, Bash, MaxMSP, SQL (Presto)
+Interfaces: MATLAB, EAGLE, ROS, Pytest, OSC
+Tools: Git, Pylint, Regex, Sphinx, JIRA
+Audio: Ableton Live, Pro Tools, Audacity, MuseScore, Reason
+
+COURSEWORK
+CS8803-O01: Artificial Intelligence for Robotics (for the Georgia Tech OMSCS program)
+
+18-491: Fundamentals of Signal Processing
+18-349: Embedded Real-Time Systems
+18-551: Signal Processing Systems Design
+18-493: Electroacoustics
+57-347: Electronic & Computer Music
+15-323: Computer Music Info Processing

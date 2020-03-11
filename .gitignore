@@ -6,5 +6,5 @@ google*.html
 # Then your typically ignored files
 .DS_Store
 package-lock.json
-.well-known
-cgi-bin/
+/.well-known/
+/cgi-bin/
