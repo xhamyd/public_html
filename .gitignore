@@ -3,8 +3,11 @@
 *.xml
 google*.html
 
-# Then your typically ignored files
 .DS_Store
 package-lock.json
 /.well-known/
 /cgi-bin/
+
+# Cyberduck FTP configs
+/.ftpconfig
+/.ftpignore

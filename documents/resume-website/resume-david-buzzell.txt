@@ -21,9 +21,9 @@ Robot Simulator Specialist (November 2019 - March 2020)
   - Supported Scrum policy changes to improve feature reporting and delivery
 
 Automation Infrastructure Developer (February 2019 - November 2019)
-  - Architected new Python automation for robot software testing company-wide
+  - Architected new company-wide Python automation for robot software testing
   - Automated robot log file evaluation, reducing manual log review time by 5 hrs/week
-  - Reduced manual testing time by 30% through fostering adoption of automation
+  - Reduced manual testing time by 30% through weekly 1:1 training sessions
   - Collaborated with an 8-person team to deliver new software features every 3 weeks
   - Pioneered 466 code standards (Pylint) and distributing code documentation (Sphinx)
 
