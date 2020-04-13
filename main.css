@@ -118,7 +118,7 @@ h1 {
 }
 
 .timeframe {
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .homeimg img {
@@ -152,8 +152,7 @@ h1 {
 }
 
 .contact-info {
-    padding: 0 15px;
-    padding-bottom: 15px;
+    padding: 0 15px 15px;
     border-bottom: 2px solid #eeeeee;
 }
 
@@ -171,7 +170,7 @@ a.discrete-links {
 }
 
 .fa {
-    margin: 0px 2px;
+    margin: 0 2px;
     padding: 10px;
     font-size: 30px;
     width: 50px;
