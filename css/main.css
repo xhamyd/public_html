@@ -195,11 +195,6 @@ a.discrete-links {
     color: white;
 }
 
-.fa-facebook {
-    background: #3b5998;
-    color: white;
-}
-
 .fa-soundcloud {
     width: 60px;
     background: #ff5500;
@@ -208,28 +203,5 @@ a.discrete-links {
 
 .fa-youtube {
     background: #bb0000;
-    color: white;
-}
-
-.fa-snapchat-ghost {
-    background: #fffb00;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    border: 1px solid #dedede;
-}
-
-.fa-instagram {
-    width: 55px;
-    background: #125688;
-    color: white;
-}
-
-.fa-skype {
-    background: #00aff0;
-    color: white;
-}
-
-.fa-reddit {
-    background: #ff5700;
     color: white;
 }
