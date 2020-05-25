@@ -15,4 +15,4 @@ jobs:
         ftp-server: sftp://server234.web-hosting.com:21098/
         ftp-username: davivirc
         ftp-password: ${{ secrets.SFTP_PASSWORD }}
-        git-ftp-args: --dry-run
+        git-ftp-args: --dry-run --insecure
