@@ -1,5 +1,5 @@
 # https://github.com/marketplace/actions/ftp-deploy
-on: pull-request
+on: pull_request
 name: Test Publishing
 jobs:
   FTP-Deploy-Action:
