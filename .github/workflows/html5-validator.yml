@@ -2,7 +2,7 @@
 on: pull_request
 name: HTML5 Validator
 jobs:
-  build:
+  Linter:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2  # Required with all actions
@@ -11,7 +11,3 @@ jobs:
       with:
         root: .
         css: true
-    - uses: actions/upload-artifact@v2
-      with:
-        name: log
-        path: log.log
