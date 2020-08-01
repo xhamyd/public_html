@@ -1,0 +1,14 @@
+# https://github.com/marketplace/actions/markdownlint-cli
+on: pull_request
+name: Markdown Linter
+jobs:
+  Linter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: markdownlint-cli
+        uses: nosborn/github-action-markdown-cli@v1.1.1
+        with:
+          files: .
+          config_file: ".github/workflows/.markdownlint.json"
