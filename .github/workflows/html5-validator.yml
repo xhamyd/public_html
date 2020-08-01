@@ -1,6 +1,6 @@
 # https://github.com/marketplace/actions/html5-validator
-name: HTML5 Validator
 on: pull_request
+name: HTML5 Validator
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,8 +11,7 @@ jobs:
       with:
         root: .
         css: true
-    - uses: actions/upload-artifact@v1
-    - name: Retrieve Log
+    - uses: actions/upload-artifact@v2
       with:
         name: log
         path: log.log
