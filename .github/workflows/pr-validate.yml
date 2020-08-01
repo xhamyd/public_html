@@ -1,6 +1,7 @@
 # Runs https://github.com/marketplace/actions/ftp-deploy
 ---
-on: pull_request
+on:
+  pull_request: true
 name: Test Publishing  # DOES NOT DEPLOY CHANGES!
 jobs:
   FTP-Deploy-Action:
