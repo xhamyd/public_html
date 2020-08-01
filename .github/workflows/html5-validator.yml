@@ -1,6 +1,6 @@
 # https://github.com/marketplace/actions/html5-validator
 name: HTML5 Validator
-on: pull-request
+on: pull_request
 jobs:
   build:
     runs-on: ubuntu-latest
