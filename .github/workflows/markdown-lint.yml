@@ -1,4 +1,5 @@
----  # https://github.com/marketplace/actions/markdownlint-cli
+---
+# https://github.com/marketplace/actions/markdownlint-cli
 on: pull_request
 name: Markdown Linter
 jobs:
