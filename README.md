@@ -12,4 +12,4 @@ In order to keep track of the next tasks for this website, I have implemented a
 Kanban board to prioritize them into cards. Anyone is able to view the board and
 leave comments for suggestions and improvements for my website.
 
-Trello Board: <https://trello.com/b/5pJDT1rc/https-wwwdavidbuzzellcom>
+See my [GitHub Board](https://github.com/xhamyd/public_html/projects/1)
