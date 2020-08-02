@@ -1,0 +1,15 @@
+# https://github.com/marketplace/actions/yaml-lint
+---
+on: pull_request
+name: YAML Linter
+jobs:
+  Linter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: yaml-lint
+        uses: ibiqlik/action-yamllint@v1
+        with:
+          strict: true
+          config_file: ".github/workflows/.yamllint.yml"
