@@ -1,5 +1,4 @@
-# https://github.com/marketplace/actions/yaml-lint
----
+---  # https://github.com/marketplace/actions/yaml-lint
 on: pull_request
 name: YAML Linter
 jobs:

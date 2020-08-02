@@ -1,5 +1,4 @@
-# https://github.com/marketplace/actions/html5-validator
----
+---  # https://github.com/marketplace/actions/html5-validator
 on: pull_request
 name: HTML5 Validator
 jobs:
