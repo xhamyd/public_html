@@ -1,0 +1,5 @@
+extends: default
+
+rules:
+  truthy:
+    check-keys: false  # Need to turn off "on" key names for Github Actions
