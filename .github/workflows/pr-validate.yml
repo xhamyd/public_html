@@ -3,7 +3,7 @@
 on: pull_request
 name: Test Publishing  # DOES NOT DEPLOY CHANGES!
 jobs:
-  FTP-Deploy-Action:
+  FTP-Deploy-Test:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:

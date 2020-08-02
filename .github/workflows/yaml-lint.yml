@@ -3,7 +3,7 @@
 on: pull_request
 name: YAML Linter
 jobs:
-  Linter:
+  YAML-Linter:
     runs-on: ubuntu-latest
 
     steps:
