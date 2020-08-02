@@ -1,5 +1,5 @@
----
 # https://github.com/marketplace/actions/ftp-deploy
+---
 on:
   push:
     branches:
