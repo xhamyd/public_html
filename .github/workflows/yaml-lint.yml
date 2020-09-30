@@ -1,15 +1,15 @@
-# https://github.com/marketplace/actions/yaml-lint
+# https://github.com/marketplace/actions/ubutu-lint
 ---
 on: pull_request
-name: YAML Linter
+name: ubuntu Linter
 jobs:
-  YAML-Linter:
+  ubuntu-Linter:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v1
-      - name: yaml-lint
-        uses: ibiqlik/action-yamllint@v1
+      - name: ubuntu-lint
+        uses: ibiqlik/action-ubuntulint@v1
         with:
           strict: true
-          config_file: ".github/workflows/.yamllint"
+          config_file: ".github/workflows/.ubuntulint"
