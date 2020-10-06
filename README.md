@@ -1,5 +1,7 @@
 # public_html
 
+![Publish Website](https://github.com/xhamyd/public_html/workflows/Publish%20Website/badge.svg?branch=master)
+
 This repo contains the public HTML files to my personal website:
 <https://www.davidbuzzell.com>. This git repo is synced up to the website
 through PR triggers that push updates through FTP upon any successful PR
