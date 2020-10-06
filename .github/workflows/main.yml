@@ -20,4 +20,4 @@ jobs:
           ftp-server: ftp://server234.web-hosting.com:21/
           ftp-username: davivirc
           ftp-password: ${{ secrets.SFTP_PASSWORD }}
-          git-ftp-args: --remote-root public_html/
+          git-ftp-args: --remote-root=public_html
