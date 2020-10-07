@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  public_html:
+    image: nginx:alpine
+    ports:
+    - 1629:80
+    volumes:
+    - ./:/usr/share/nginx/html
+    container_name: test_website
