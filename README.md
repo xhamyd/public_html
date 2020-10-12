@@ -4,6 +4,7 @@
 ![HTML5 Validator](https://github.com/xhamyd/public_html/workflows/HTML5%20Validator/badge.svg)
 ![Markdown Linter](https://github.com/xhamyd/public_html/workflows/Markdown%20Linter/badge.svg)
 ![YAML Linter](https://github.com/xhamyd/public_html/workflows/YAML%20Linter/badge.svg)
+
 -----
 
 **NOTE:** This project is not open to external contributions. Please do
