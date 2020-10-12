@@ -36,6 +36,6 @@ Once Docker is installed and configured locally:
 * `cd` into the root directory of this repo.
 * Bring up the container: `docker-compose up -d`
 * Access the website at `localhost:1629`
-  * This uses a bind mount volume, so any repo changes will automatically
-  update within the browser (after refresh, of course)
+    * This uses a bind mount volume, so any repo changes will automatically update within the browser (after refresh,
+    of course)
 * Tear down the container: `docker-compose down`
