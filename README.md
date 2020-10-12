@@ -1,8 +1,9 @@
 # [public_html](https://github.com/xhamyd/public_html)
 
 ![Publish Website](https://github.com/xhamyd/public_html/workflows/Publish%20Website/badge.svg?branch=master)
+![HTML5 Validator](https://github.com/xhamyd/public_html/workflows/HTML5%20Validator/badge.svg)
 ![Markdown Linter](https://github.com/xhamyd/public_html/workflows/Markdown%20Linter/badge.svg)
-
+![YAML Linter](https://github.com/xhamyd/public_html/workflows/YAML%20Linter/badge.svg)
 -----
 
 **NOTE:** This project is not open to external contributions. Please do
