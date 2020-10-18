@@ -75,7 +75,9 @@ h1 {
     margin-bottom: 20px;
 }
 
-.text {
+.text,
+.homeimg-text,
+.work-text {
     color: #000000;
     font-size: 16px;
     position: absolute;
@@ -87,14 +89,11 @@ h1 {
 }
 
 .homeimg-text {
-    color: #000000;
     font-size: 26px;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    padding: 0 10px;
-    transform: translate(0%, -100%);
-    text-align: center;
+}
+
+.work-text {
+    font-size: 20px;
 }
 
 .top-row {
