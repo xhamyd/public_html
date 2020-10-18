@@ -15,6 +15,7 @@ h1 {
     border-bottom: 2px solid #eeeeee;
 }
 
+
 .btn-group-justified {
     padding: 0 15px;
 }
@@ -215,19 +216,26 @@ a.discrete-links {
 
 
 /* Source: https://stackoverflow.com/a/47188741 */
-@media screen and (min-width: 988px) {
+@media screen and (min-width: 992px) {
     .experience-row {
         display: flex;
         flex-direction: row;
         flex-grow: 1;
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        align-items: center;
     }
 
-    .experience-img {
+    .experience-left {
         order: 1;
     }
 
-    .experience-text {
+    .experience-right {
         order: 2;
     }
+}
+
+
+.experience-left img,
+.experience-right img {
+    width: 100%;
 }
