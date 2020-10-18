@@ -212,3 +212,22 @@ a.discrete-links {
     color: black;
     text-decoration: none;
 }
+
+
+/* Source: https://stackoverflow.com/a/47188741 */
+@media screen and (min-width: 988px) {
+    .experience-row {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-wrap: wrap
+    }
+
+    .experience-img {
+        order: 1;
+    }
+
+    .experience-text {
+        order: 2;
+    }
+}
