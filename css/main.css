@@ -93,7 +93,7 @@ h1 {
 }
 
 .work-text {
-    font-size: 20px;
+    font-size: 3vw;
 }
 
 .top-row {
@@ -213,6 +213,11 @@ a.discrete-links {
     text-decoration: none;
 }
 
+.experience-left img,
+.experience-right img {
+    border: 0;
+    width: 100%;
+}
 
 /* Source: https://stackoverflow.com/a/47188741 */
 @media screen and (min-width: 992px) {
@@ -231,10 +236,19 @@ a.discrete-links {
     .experience-right {
         order: 2;
     }
+
+    .experience-left img,
+    .experience-right img {
+        max-height: 300px;
+    }
+
+    .work-text {
+        font-size: 2vw;
+    }
 }
 
-
-.experience-left img,
-.experience-right img {
-    width: 100%;
+@media screen and (min-width: 1300px) {
+    .work-text {
+        font-size: 1.5vw;
+    }
 }
