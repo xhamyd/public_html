@@ -65,16 +65,9 @@ h1 {
     opacity: 0.85;
 }
 
-.resume-text {
-    padding-top: 20px;
-}
-
-.resume-text h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.text {
+.proj-text p,
+.homeimg-text p,
+.work-text p { /* .work-text applies only for viewwidths < 992px */
     color: #000000;
     font-size: 16px;
     position: absolute;
@@ -85,15 +78,16 @@ h1 {
     text-align: center;
 }
 
-.homeimg-text {
-    color: #000000;
+.proj-text p {
+    font-size: 3vw;
+}
+
+.homeimg-text p {
     font-size: 26px;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    padding: 0 10px;
-    transform: translate(0%, -100%);
-    text-align: center;
+}
+
+.work-text p {
+    font-size: 3vw;
 }
 
 .top-row {
@@ -211,4 +205,58 @@ a.discrete-links {
 #name_header {
     color: black;
     text-decoration: none;
+}
+
+.experience-left img,
+.experience-right img {
+    border: 0;
+    width: 100%;
+}
+
+/* Source: https://stackoverflow.com/a/47188741 */
+@media screen and (min-width: 992px) {
+    .experience-row {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .experience-left {
+        order: 1;
+    }
+
+    .experience-right {
+        order: 2;
+    }
+
+    .experience-left img,
+    .experience-right img {
+        max-height: 300px;
+    }
+
+    .work-text p {
+        font-size: 2vw;
+    }
+
+    .proj-text p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .proj-text p {
+        font-size: 1.25vw;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .work-text p {
+        font-size: 1.5vw;
+    }
+
+    .proj-text p {
+        font-size: 1.25vw;
+    }
 }
