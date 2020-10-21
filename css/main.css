@@ -15,7 +15,6 @@ h1 {
     border-bottom: 2px solid #eeeeee;
 }
 
-
 .btn-group-justified {
     padding: 0 15px;
 }
@@ -66,18 +65,9 @@ h1 {
     opacity: 0.85;
 }
 
-.resume-text {
-    padding-top: 20px;
-}
-
-.resume-text h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.text,
-.homeimg-text,
-.work-text {
+.proj-text p,
+.homeimg-text p,
+.work-text p { /* .work-text applies only for viewwidths < 992px */
     color: #000000;
     font-size: 16px;
     position: absolute;
@@ -88,11 +78,15 @@ h1 {
     text-align: center;
 }
 
-.homeimg-text {
+.proj-text p {
+    font-size: 3vw;
+}
+
+.homeimg-text p {
     font-size: 26px;
 }
 
-.work-text {
+.work-text p {
     font-size: 3vw;
 }
 
@@ -242,13 +236,27 @@ a.discrete-links {
         max-height: 300px;
     }
 
-    .work-text {
+    .work-text p {
+        font-size: 2vw;
+    }
+
+    .proj-text p {
         font-size: 2vw;
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .proj-text p {
+        font-size: 1.25vw;
+    }
+}
+
 @media screen and (min-width: 1300px) {
-    .work-text {
+    .work-text p {
         font-size: 1.5vw;
+    }
+
+    .proj-text p {
+        font-size: 1.25vw;
     }
 }
