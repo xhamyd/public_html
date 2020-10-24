@@ -4,3 +4,5 @@ extends: default
 rules:
   truthy:
     check-keys: false  # Need to turn off "on" key names for Github Actions
+  line-length:
+    allow-non-breakable-words: true  # Github's API URLs were breaking the line-length rule
