@@ -1,0 +1,19 @@
+---
+on: issue_comment
+name: Autoreply to issue comments
+jobs:
+  build:
+    name: Greeting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Sending REST API request
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          curl \
+            -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: Basic xhamyd ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/xhamyd/public_html/issues/${ISSUE_NUMBER}/comments \
+            -d '{"body":"This is a test response - REST"}'
