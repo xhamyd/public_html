@@ -6,7 +6,7 @@ if [[ "${COMMENTER}" == "xhamyd" ]]; then
 fi
 
 OUTPUT=$(curl -H "Accept: application/vnd.github.v3+json" \
-         -H "Authorization: token ${{ secrets.OAUTH_TOKEN }}" \
+         -H "Authorization: token ${OAUTH_TOKEN}" \
          https://api.github.com/repos/xhamyd/public_html/issues/${ISSUE_NUMBER}/labels)
 echo "Labels on Issue #${ISSUE_NUMBER}: ${OUTPUT}"
 if [[ "$OUTPUT" == *"Autocommented"* ]]; then
@@ -14,7 +14,7 @@ if [[ "$OUTPUT" == *"Autocommented"* ]]; then
     return
 fi
 
-curl -X POST -H "Authorization: token ${{ secrets.OAUTH_TOKEN }}" \
+curl -X POST -H "Authorization: token ${OAUTH_TOKEN}" \
     https://api.github.com/repos/xhamyd/public_html/issues/${ISSUE_NUMBER}/comments \
     -d "{\"body\":\"Hi @${COMMENTER} , thanks for showing interest in my Personal Website project! Right now, \
                     I have the project set up for public viewing of my personal contributions to this repo. At \
@@ -23,6 +23,6 @@ curl -X POST -H "Authorization: token ${{ secrets.OAUTH_TOKEN }}" \
                     any bugs or suggestions you may have for the project. Thanks again for your interest, and \
                     take care!\"}"
 curl -X PUT -H "Accept: application/vnd.github.v3+json" \
-    -H "Authorization: token ${{ secrets.OAUTH_TOKEN }}" \
+    -H "Authorization: token ${OAUTH_TOKEN}" \
     https://api.github.com/repos/xhamyd/public_html/issues/${ISSUE_NUMBER}/labels \
     -d '{"labels":["Autocommented"]}'

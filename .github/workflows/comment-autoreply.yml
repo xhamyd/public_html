@@ -12,4 +12,5 @@ jobs:
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           COMMENTER: ${{ github.event.comment.user.login }}
+          OAUTH_TOKEN: ${{ secrets.OAUTH_TOKEN }}
         run: .github/workflows/autocomment.sh
