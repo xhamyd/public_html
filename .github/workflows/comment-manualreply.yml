@@ -9,10 +9,10 @@ on:
       commenter:
         description: 'The person to respond to'
         required: true
-name: Autoreply to issue comments
+name: Manually reply to issue comments
 jobs:
   build:
-    name: Issue auto-commenter
+    name: Issue manual-commenter
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
