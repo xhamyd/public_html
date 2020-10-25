@@ -12,4 +12,4 @@ jobs:
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           COMMENTER: ${{ github.event.comment.user.login }}
-        run: pwd && ls -la && ./autocomment.sh
+        run: .github/workflows/autocomment.sh
