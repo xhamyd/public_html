@@ -2,7 +2,7 @@
 
 if [[ "${COMMENTER}" == "xhamyd" ]]; then
     echo "Comment was made by me, no need to autocomment!"
-    return
+    exit
 fi
 
 OUTPUT=$(curl -H "Accept: application/vnd.github.v3+json" \
@@ -11,7 +11,7 @@ OUTPUT=$(curl -H "Accept: application/vnd.github.v3+json" \
 echo "Labels on Issue #${ISSUE_NUMBER}: ${OUTPUT}"
 if [[ "$OUTPUT" == *"Autocommented"* ]]; then
     echo "Already commented before, no need to autocomment now!"
-    return
+    exit
 fi
 
 curl -X POST -H "Authorization: token ${OAUTH_TOKEN}" \
