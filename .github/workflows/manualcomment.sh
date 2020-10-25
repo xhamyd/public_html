@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-# Do not authenticate here, I want this to be a bot posting!
-curl -X POST \
+curl -X POST -H "Authorization: token ${GITHUB_TOKEN}" \
     https://api.github.com/repos/xhamyd/public_html/issues/${ISSUE_NUMBER}/comments \
     -d "{\"body\":\"Hi @${COMMENTER} , thanks for showing interest in my Personal Website project! Right now, \
                     I have the project set up for public viewing of my personal contributions to this repo. At \
