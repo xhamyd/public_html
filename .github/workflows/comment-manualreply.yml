@@ -1,0 +1,24 @@
+# This is a homemade workflow, no references necessary here
+---
+on:
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'The issue to comment on'
+        required: true
+      commenter:
+        description: 'The person to respond to'
+        required: true
+name: Autoreply to issue comments
+jobs:
+  build:
+    name: Issue auto-commenter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Sending REST API request
+        env:
+          ISSUE_NUMBER: ${{ github.event.inputs.issue_number }}
+          COMMENTER: ${{ github.event.inputs.commenter }}
+          OAUTH_TOKEN: ${{ secrets.OAUTH_TOKEN }}
+        run: .github/workflows/manualcomment.sh

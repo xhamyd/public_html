@@ -1,6 +1,6 @@
 # This is a homemade workflow, no references necessary here
 ---
-on: [issue_comment, workflow_dispatch]
+on: issue_comment
 name: Autoreply to issue comments
 jobs:
   build:
