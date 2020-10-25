@@ -1,0 +1,20 @@
+# This is a homemade workflow, no references necessary here
+---
+on:
+  workflow_dispatch:
+    inputs:
+      testinput:
+        description: 'Whatever you want it to be'
+        required: true
+name: Test environment for actions
+jobs:
+  build:
+    name: Issue manual-commenter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Test step
+        env:
+          TESTINPUT: ${{ github.event.inputs.testinput }}
+        run: |
+          echo "Hi people! ${TESTINPUT}"
