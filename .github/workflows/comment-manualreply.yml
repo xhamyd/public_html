@@ -20,5 +20,4 @@ jobs:
         env:
           ISSUE_NUMBER: ${{ github.event.inputs.issue_number }}
           COMMENTER: ${{ github.event.inputs.commenter }}
-          OAUTH_TOKEN: ${{ secrets.OAUTH_TOKEN }}
         run: .github/workflows/manualcomment.sh
