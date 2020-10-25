@@ -10,7 +10,7 @@ jobs:
       - name: Sending REST API request
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
-          COMMENTER: ${{ github.event.sender }}
+          COMMENTER: ${{ github.event.comment.user.login }}
         run: |
           curl \
             -X POST \
