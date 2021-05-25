@@ -260,3 +260,7 @@ a.discrete-links {
         font-size: 1.25vw;
     }
 }
+
+.thin-headers {
+    margin-top: 5px;
+}
