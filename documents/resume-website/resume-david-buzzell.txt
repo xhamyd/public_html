@@ -13,6 +13,18 @@ Certified Scrum Master (CSM) - January 2020
 Certified Scrum Product Owner (CSPO) - January 2020
 
 WORK EXPERIENCE
+DSP Software Engineer at DSP Concepts (July 2021 - present)
+  - Manage unit testing effort by adopting Googletest C++ framework
+  - Implement a Python interface for the embedded C real-time audio library
+  - Architect a reimplementation of the audio signal designer tool for PC
+  - Update DSP audio blocks across several supported embedded targets
+
+QA Test Software Engineer at DSP Concepts (May 2020 - July 2021)
+  - Architect a new Python package for Jenkins build system and internal developers for embedded testing and automated deployment
+  - Extend audio modules and regression test scripts for the AudioWeaver MATLAB platform
+  - Built software test plan for embedded software products, across many board architectures
+  - Established code quality analysis and automated reporting for MISRA compliance
+
 Software Engineer at iRobot
 Robot Simulator Specialist (November 2019 - March 2020)
   - Supported uptime of simulated robots in AWS Robomaker running 50 mission hrs/day
@@ -45,10 +57,11 @@ Hybrid Instruments (May 2016 - August 2016)
   - Characterized analog signal measurement with mobile app development for QA
 
 RELEVANT SKILLS
-Technologies: Python, C/C++, Bash, MaxMSP, SQL (Presto)
-Interfaces: MATLAB, EAGLE, ROS, Pytest, OSC
-Tools: Git, Pylint, Regex, Sphinx, JIRA
-Audio: Ableton Live, Pro Tools, Audacity, MuseScore, Reason
+Languages: Python, C, C++, Bash, SQL, Groovy (Jenkins), MATLAB, CMake
+Libraries: MaxMSP, EAGLE, ROS, AudioWeaver, Pytest, Jupyter
+Targets: Arduino, Raspberry Pi, STMicro, Qualcomm, HiFi DSP
+Tools: Git, RegEx, Sphinx, Doxygen, JIRA, Pytest, Unittest
+Audio: Ableton Live, Pro Tools, Audacity, MuseScore, Reason, OSC
 
 COURSEWORK
 CS8803-O01: Artificial Intelligence for Robotics (for the Georgia Tech OMSCS program)
