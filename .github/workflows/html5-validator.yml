@@ -12,3 +12,10 @@ jobs:
         with:
           root: ./
           css: true
+  Upload-Log:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/upload-artifact@v2
+        with:
+          name: log
+          path: log.log
