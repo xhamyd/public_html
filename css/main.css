@@ -264,3 +264,7 @@ a.discrete-links {
 .thin-headers {
     margin-top: 5px;
 }
+
+.top-row .fake-list {
+    margin-bottom: 10px;
+}
