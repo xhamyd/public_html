@@ -113,10 +113,6 @@ h1 {
     font-size: 18px;
 }
 
-.timeframe {
-    padding-left: 0;
-}
-
 .homeimg img {
     margin: auto;
 }
@@ -263,4 +259,8 @@ a.discrete-links {
 
 .thin-headers {
     margin-top: 5px;
+}
+
+.top-row .fake-list {
+    margin-bottom: 10px;
 }
