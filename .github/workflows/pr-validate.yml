@@ -2,14 +2,14 @@
 ---
 on: pull_request
 
-name: Test Publishing via SSH # DOES NOT DEPLOY CHANGES!
+name: Test Publishing via SSH  # DOES NOT DEPLOY CHANGES!
 jobs:
   web-deploy:
     name: Deploy Website During PR
     runs-on: ubuntu-latest
     steps:
-      - Name: Get Latest Code
-      - uses: actions/checkout@v3
+      - name: Get Latest Code
+        uses: actions/checkout@v3
 
       - name: Sync Files
         uses: SamKirkland/web-deploy@v1
