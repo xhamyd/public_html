@@ -14,7 +14,7 @@ jobs:
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ftp://server234.web-hosting.com/public_html/
+          server: ftps://server234.web-hosting.com/public_html/
           username: davivirc
           password: ${{ secrets.SFTP_PASSWORD }}
           dry-run: true
