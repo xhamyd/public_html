@@ -16,7 +16,9 @@ jobs:
         with:
           target-server: server234.web-hosting.com
           remote-user: davivirc
-          private-ssh-key: ${{ secrets.SFTP_PASSWORD }}
+          private-ssh-key: ${{ secrets.WEBSITE_SSH_PRIVATE_KEY }}
           ssh-port: 21098
           destination-path: ~/public_html
           rsync-options: --dry-run --archive --compress --delete-after --human-readable --exclude=.git* --exclude=.git/
+        env:
+          RSYNC_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
