@@ -11,7 +11,7 @@ jobs:
         with:
           fetch-depth: 2
       - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp://server234.web-hosting.com:21/
           username: davivirc
