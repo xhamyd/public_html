@@ -3,7 +3,7 @@
 on: pull_request
 
 env:
-  RSYNC_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+  RSYNC_PASSWORD: f7ct$Z@gz5fo
 
 name: Test Publishing via SSH  # DOES NOT DEPLOY CHANGES!
 jobs:
@@ -14,14 +14,11 @@ jobs:
       - name: Get Latest Code
         uses: actions/checkout@v3
 
-      - name: Check file contents pre-edit
-        run: ls -la && echo $RSYNC_PASSWORD
+      - name: Check the environment variable
+        run: echo "environment variable is $RSYNC_PASSWORD and it's not blank i hope"
 
       - name: Run a one-line command
         run: mkdir ~/.ssh && echo -e "Host *\n    HostKeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa" > ~/.ssh/config
-
-      - name: Check file contents post-edit
-        run: ls -la ~/.ssh && cat ~/.ssh/config
 
       - name: Sync Files
         uses: SamKirkland/web-deploy@v1
