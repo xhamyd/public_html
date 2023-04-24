@@ -2,9 +2,6 @@
 ---
 on: pull_request
 
-env:
-  RSYNC_PASSWORD: f7ct$Z@gz5fo
-
 name: Test Publishing via SSH  # DOES NOT DEPLOY CHANGES!
 jobs:
   web-deploy:
