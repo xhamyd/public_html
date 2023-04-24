@@ -11,8 +11,14 @@ jobs:
       - name: Get Latest Code
         uses: actions/checkout@v3
 
+      - name: Check file contents pre-edit
+        run: ls -la
+
       - name: Run a one-line command
-        run: mkdir .ssh && echo "HostKeyAlgorithms +ssh-rsa" > .ssh/config
+        run: mkdir ~/.ssh && echo "HostKeyAlgorithms +ssh-rsa" > ~/.ssh/config
+
+      - name: Check file contents post-edit
+        run: ls -la ~/.ssh && cat ~/.ssh/config
 
       - name: Sync Files
         uses: SamKirkland/web-deploy@v1
