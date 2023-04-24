@@ -7,10 +7,10 @@ on:
         required: false
         type: string
     secrets:
-        WEBSITE_SSH_PRIVATE_KEY:
-          required: true
+      WEBSITE_SSH_PRIVATE_KEY:
+        required: true
 
-name: Publish Website via SSH  # TODO: make this reuse pr-validate.yml
+name: Publish Website via SSH
 jobs:
   web-deploy:
     name: Deploy Website During Merge
