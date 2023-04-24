@@ -5,8 +5,8 @@ google*.html
 
 .DS_Store
 package-lock.json
-/.well-known/
-/cgi-bin/
+.well-known/
+cgi-bin/
 
 # Cyberduck FTP configs
 /.ftpconfig
@@ -14,3 +14,7 @@ package-lock.json
 
 js/
 /.idea
+
+fonts/
+sitemap.xml
+BingSiteAuth.xml
