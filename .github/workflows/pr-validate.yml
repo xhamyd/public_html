@@ -12,10 +12,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Check file contents pre-edit
-        run: ls -la
+        run: ls -la && ls -la .github/
 
       - name: Run a one-line command
-        run: mkdir ~/.ssh && cp ~/.github/ssh-config ~/.ssh/config
+        run: mkdir ~/.ssh && echo -e "Host *\n    HostKeyAlgorithms +ssh-rsa" ~/.ssh/config
 
       - name: Check file contents post-edit
         run: ls -la ~/.ssh && cat ~/.ssh/config
