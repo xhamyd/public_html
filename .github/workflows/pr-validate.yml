@@ -1,6 +1,7 @@
 # https://github.com/marketplace/actions/ftp-deploy
 ---
 on: pull_request
+
 name: Test Publishing  # DOES NOT DEPLOY CHANGES!
 jobs:
   FTP-Deploy-Test:
@@ -13,7 +14,7 @@ jobs:
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ftp://server234.web-hosting.com:21/
+          server: ftp://server234.web-hosting.com/public_html/
           username: davivirc
           password: ${{ secrets.SFTP_PASSWORD }}
-          git-ftp-args: --dry-run
+          dry-run: true
