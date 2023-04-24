@@ -1,0 +1,37 @@
+# https://github.com/marketplace/actions/web-deploy-anything
+---
+on:
+  workflow_call:
+    inputs:
+      dry-run:
+        required: false
+        type: string
+    secrets:
+        WEBSITE_SSH_PRIVATE_KEY:
+          required: true
+
+name: Publish Website via SSH  # TODO: make this reuse pr-validate.yml
+jobs:
+  web-deploy:
+    name: Deploy Website During Merge
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Latest Files
+        uses: actions/checkout@v3
+
+      - name: Setup Custom SSH Config  # Necessary because server's OpenSSH 5.3 doesn't natively support RSA
+        run: >
+          mkdir ~/.ssh &&
+          echo -e "Host *\n    HostKeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa" > ~/.ssh/config
+
+      - name: Final Publish via rsync
+        uses: SamKirkland/web-deploy@v1
+        with:
+          target-server: server234.web-hosting.com
+          remote-user: davivirc
+          private-ssh-key: ${{ secrets.WEBSITE_SSH_PRIVATE_KEY }}
+          ssh-port: 21098
+          destination-path: ~/public_html
+          rsync-options: >
+            -v ${{ inputs.dry-run }} --archive --itemize-changes --delete-after --human-readable --stats
+            --exclude=.git* --exclude=.git/ --exclude-from=.gitignore
