@@ -1,4 +1,4 @@
-# https://github.com/marketplace/actions/ftp-deploy
+# https://github.com/marketplace/actions/web-deploy-anything
 ---
 on: pull_request
 
@@ -11,7 +11,7 @@ jobs:
       - name: Get Latest Files
         uses: actions/checkout@v3
 
-      - name: Setup Custom SSH Config
+      - name: Setup Custom SSH Config  # Necessary because server's OpenSSH 5.3 doesn't natively support RSA
         run: >
           mkdir ~/.ssh &&
           echo -e "Host *\n    HostKeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa" > ~/.ssh/config
