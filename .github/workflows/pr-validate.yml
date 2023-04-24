@@ -11,9 +11,6 @@ jobs:
       - name: Get Latest Code
         uses: actions/checkout@v3
 
-      - name: Check the environment variable
-        run: echo "environment variable is $RSYNC_PASSWORD and it's not blank i hope"
-
       - name: Run a one-line command
         run: mkdir ~/.ssh && echo -e "Host *\n    HostKeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa" > ~/.ssh/config
 
