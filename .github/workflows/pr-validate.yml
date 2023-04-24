@@ -11,9 +11,9 @@ jobs:
         with:
           fetch-depth: 2
       - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.4
         with:
-          ftp-server: ftp://server234.web-hosting.com:21/
-          ftp-username: davivirc
-          ftp-password: ${{ secrets.SFTP_PASSWORD }}
+          server: ftp://server234.web-hosting.com:21/
+          username: davivirc
+          password: ${{ secrets.SFTP_PASSWORD }}
           git-ftp-args: --dry-run
