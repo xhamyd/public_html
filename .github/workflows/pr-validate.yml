@@ -22,4 +22,4 @@ jobs:
           private-ssh-key: ${{ secrets.WEBSITE_SSH_PRIVATE_KEY }}
           ssh-port: 21098
           destination-path: ~/public_html
-          rsync-options: --dry-run --archive --compress --delete-after --human-readable --exclude=.git* --exclude=.git/ --stats
+          rsync-options: -vv --dry-run --archive --human-readable --itemize-changes --delete-after --human-readable --exclude=.git* --exclude=.git/ --stats
