@@ -15,7 +15,7 @@ jobs:
         run: ls -la
 
       - name: Run a one-line command
-        run: mkdir ~/.ssh && echo "HostKeyAlgorithms +ssh-rsa" > ~/.ssh/config
+        run: mkdir ~/.ssh && cp ~/.github/ssh-config ~/.ssh/config
 
       - name: Check file contents post-edit
         run: ls -la ~/.ssh && cat ~/.ssh/config
