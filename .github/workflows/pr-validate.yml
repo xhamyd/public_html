@@ -15,7 +15,7 @@ jobs:
         run: ls -la
 
       - name: Run a one-line command
-        run: mkdir ~/.ssh && echo -e "Host *\n    HostKeyAlgorithms +ssh-rsa" > ~/.ssh/config
+        run: mkdir ~/.ssh && echo -e "Host *\n    HostKeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa" > ~/.ssh/config
 
       - name: Check file contents post-edit
         run: ls -la ~/.ssh && cat ~/.ssh/config
