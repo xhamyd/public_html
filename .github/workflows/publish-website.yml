@@ -15,8 +15,8 @@ jobs:
         with:
           fetch-depth: 2
       - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          ftp-server: ftp://server234.web-hosting.com/public_html/
-          ftp-username: davivirc
-          ftp-password: ${{ secrets.SFTP_PASSWORD }}
+          server: ftp://server234.web-hosting.com/public_html/
+          username: davivirc
+          password: ${{ secrets.SFTP_PASSWORD }}
