@@ -1,2 +1,0 @@
-Host *
-    HostKeyAlgorithms +ssh-rsa
