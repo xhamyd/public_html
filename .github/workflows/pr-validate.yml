@@ -8,10 +8,13 @@ jobs:
     name: Deploy Website During PR
     runs-on: ubuntu-latest
     steps:
-      - name: Get Latest Code
+      - name: Get Latest Files
         uses: actions/checkout@v3
 
-      - name: Sync Files
+      - name: Setup Custom SSH Config
+        run: mkdir ~/.ssh && echo -e "Host *\n    HostKeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa" > ~/.ssh/config
+
+      - name: Test Publish via rsync
         uses: SamKirkland/web-deploy@v1
         with:
           target-server: server234.web-hosting.com
@@ -19,4 +22,4 @@ jobs:
           private-ssh-key: ${{ secrets.WEBSITE_SSH_PRIVATE_KEY }}
           ssh-port: 21098
           destination-path: ~/public_html
-          rsync-options: --dry-run --archive --compress --delete-after --human-readable --exclude=.git* --exclude=.git/
+          rsync-options: --dry-run --archive --compress --delete-after --human-readable --exclude=.git* --exclude=.git/ --stats
