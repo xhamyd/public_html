@@ -13,16 +13,23 @@ Certified Scrum Master (CSM) - January 2020
 Certified Scrum Product Owner (CSPO) - January 2020
 
 WORK EXPERIENCE
-DSP Software Engineer at DSP Concepts (July 2021 - present)
-  - Manage unit testing effort by adopting Googletest C++ framework
-  - Implement a Python interface for the embedded C real-time audio library
-  - Architect a reimplementation of the audio signal designer tool for PC
-  - Update DSP audio blocks across several supported embedded targets
+Manager at DSP Concepts (March 2023 - present)
+  - Train 3 full-time and mentor 3 intern engineers on effective task prioritization, team collaboration, and technical implementation
+  - Review the requirements, design, and implementation of all changes to the MATLAB codebase
+  - Triage all requested features and reported defects from customers and stakeholders into 6 on-time product releases per year
+  - Spearhead new process for a Rank Ordered Product Backlog of over 700 items into 25 unique categories
+  - Revamp the Continuous Integration pipeline to achieve processes under ASPICE software compliance
+
+DSP Software Engineer at DSP Concepts (July 2021 - March 2023)
+  - Architected the Interpreted Modules feature that enables external distribution of Audio IP through the MATLAB Compiled Runtime
+  - Productized a Python interface for the Audio Weaver Core real-time audio library
+  - Developed Android App with embedded Audio Weaver for an electric scooter manufacturer
+  - Responsible for the software maintenance of over 150 repositories across 30 supported targets
 
 QA Test Software Engineer at DSP Concepts (May 2020 - July 2021)
-  - Architect a new Python package for Jenkins build system and internal developers for embedded testing and automated deployment
-  - Extend audio modules and regression test scripts for the AudioWeaver MATLAB platform
-  - Built software test plan for embedded software products, across many board architectures
+  - Architected a new Python package for Jenkins build system and internal developers for embedded testing and automated deployment
+  - Expanded regression test scripts for the Audio Weaver MATLAB platform
+  - Authored and executed novel software test plan for embedded software products
   - Established code quality analysis and automated reporting for MISRA compliance
 
 Software Engineer at iRobot
