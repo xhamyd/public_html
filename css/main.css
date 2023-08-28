@@ -264,3 +264,7 @@ a.discrete-links {
 .top-row .fake-list {
     margin-bottom: 10px;
 }
+
+.button-box {
+    padding: 5px 15px;
+}
